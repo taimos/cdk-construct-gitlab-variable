@@ -1,7 +1,7 @@
 {
   "name": "@taimos/cdk-construct-gitlab-variable",
   "version": "1.0.0",
-  "description": "An AWS CDK Construct creates GITLAB CI/CD variables from SecretsManager Secrets",
+  "description": "An AWS CDK Construct that creates GITLAB CI/CD variables from SecretsManager Secrets",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
