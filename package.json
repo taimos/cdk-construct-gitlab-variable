@@ -9,11 +9,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "doc": "typedoc --excludeExternals --mode file --out doc lib/",
-    "build": "jsii",
+    "build": "npm-run-all clean build:lambda build:jsii test",
+    "build:jsii": "jsii",
     "build:lambda": "npm ci --prefix lambda/ && npm run build --prefix lambda/",
-    "watch": "jsii -w",
-    "build+test": "npm-run-all clean build:lambda build test",
-    "package": "npm-run-all clean build:lambda build test doc && jsii-pacmak"
+    "package": "npm-run-all build doc && jsii-pacmak"
   },
   "jsii": {
     "outdir": "dist",
