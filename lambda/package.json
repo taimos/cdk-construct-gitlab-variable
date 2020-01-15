@@ -1,0 +1,31 @@
+{
+  "name": "gitlab-secret-cr",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.ts",
+  "scripts": {
+    "test": "tslint -p tsconfig.json -c tslint.json && nyc -x tst -e .ts --temp-directory coverage/nyc-output -r html -r text-summary -r cobertura ./node_modules/.bin/_mocha --require ./node_modules/ts-node/register/index.js 'tst/**/*.spec.ts' --reporter nyan",
+    "build": "rimraf dist ../lib/lambda.zip && tsc && claudia pack --force --output ../lib/lambda.zip"
+  },
+  "author": "Taimos GmbH",
+  "dependencies": {
+    "aws-sdk": "^2.596.0",
+    "gitlab": "^14.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.36",
+    "@types/node": "^12.12.12",
+    "aws-sdk-mock": "^4.5.0",
+    "chai": "^4.2.0",
+    "claudia": "^5",
+    "lambda-local": "^1.6.3",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "typedoc": "^0.15.2",
+    "typescript": "^3.7.2"
+  }
+}
