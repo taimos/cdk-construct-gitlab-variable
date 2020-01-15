@@ -30,12 +30,6 @@
       }
     }
   },
-  "cdk-build": {
-    "pre": [
-      "npm ci --prefix lambda/",
-      "npm run build --prefix lambda/"
-    ]
-  },
   "keywords": [
     "cdk",
     "aws-cdk",
@@ -48,6 +42,9 @@
     "email": "thorsten.hoeger@taimos.de",
     "name": "Thorsten Hoeger",
     "url": "https://www.taimos.de"
+  },
+  "awscdkio": { 
+    "twitter": "hoegertn" 
   },
   "license": "Apache-2.0",
   "repository": {
