@@ -1,6 +1,6 @@
 {
   "name": "@taimos/cdk-construct-gitlab-variable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An AWS CDK Construct that creates GITLAB CI/CD variables from SecretsManager Secrets",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -38,8 +38,8 @@
     "name": "Thorsten Hoeger",
     "url": "https://www.taimos.de"
   },
-  "awscdkio": { 
-    "twitter": "hoegertn" 
+  "awscdkio": {
+    "twitter": "hoegertn"
   },
   "license": "Apache-2.0",
   "repository": {
