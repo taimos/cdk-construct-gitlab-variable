@@ -12,7 +12,9 @@
     "build": "npm-run-all clean build:lambda build:jsii test",
     "build:jsii": "jsii",
     "build:lambda": "npm ci --prefix lambda/ && npm run build --prefix lambda/",
-    "package": "npm-run-all build doc && jsii-pacmak"
+    "package": "npm-run-all build doc && jsii-pacmak",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "jsii": {
     "outdir": "dist",
@@ -20,13 +22,6 @@
       "python": {
         "distName": "taimos.cdk-construct-gitlab-variable",
         "module": "taimos.cdk_construct_gitlab_variable"
-      },
-      "java": {
-        "package": "de.taimos.cdk.construct.gitlab.variable",
-        "maven": {
-          "groupId": "de.taimos.cdk.construct",
-          "artifactId": "gitlab-variable"
-        }
       }
     }
   },

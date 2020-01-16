@@ -60,6 +60,7 @@ export class GitlabVariable extends Construct {
                 secretField: props.secretField,
                 projectId: props.projectId,
                 variableName: props.variableName,
+                serverUrl: props.serverUrl,
                 gitlabSecretArn: props.gitlabSecret.secretArn,
             },
         });
