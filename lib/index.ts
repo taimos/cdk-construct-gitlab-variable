@@ -7,11 +7,11 @@ import { join } from 'path';
 
 export interface GitlabVariableProps {
     /**
-     * the secret containing teh secret to publish to Gitlab
+     * the secret to publish to Gitlab
      */
     readonly secret: ISecret;
     /**
-     * the field name with the secret to publish
+     * the field name within the secret to publish
      * 
      * @default - use the whole SecretString of the secret as value
      */
