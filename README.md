@@ -1,5 +1,6 @@
 [![npm version](https://badge.fury.io/js/%40taimos%2Fcdk-construct-gitlab-variable.svg)](https://badge.fury.io/js/%40taimos%2Fcdk-construct-gitlab-variable)
 [![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-gitlab-variable.svg)](https://badge.fury.io/py/taimos.cdk-construct-gitlab-variable)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/taimos/cdk-construct-gitlab-variable)
 
 # A CDK L3 Construct for storing Gitlab CI variables from a SecretsManager secret
 
