@@ -10,22 +10,22 @@
   },
   "author": "Taimos GmbH",
   "dependencies": {
-    "aws-sdk": "^2.596.0",
-    "gitlab": "^14.1.0"
+    "aws-sdk": "^2.709.0",
+    "gitlab": "^14.2.2"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.36",
-    "@types/node": "^12.12.12",
-    "aws-sdk-mock": "^4.5.0",
+    "@types/aws-lambda": "^8.10.57",
+    "@types/node": "^14.0.14",
+    "aws-sdk-mock": "^5.1.0",
     "chai": "^4.2.0",
     "claudia": "^5",
-    "lambda-local": "^1.6.3",
-    "mocha": "^6.2.2",
-    "nyc": "^14.1.1",
-    "rimraf": "^3.0.0",
-    "ts-node": "^8.5.2",
-    "tslint": "^5.20.1",
-    "typedoc": "^0.15.2",
-    "typescript": "^3.7.2"
+    "lambda-local": "^1.7.3",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.6"
   }
 }
