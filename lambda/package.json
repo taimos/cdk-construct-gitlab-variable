@@ -10,7 +10,7 @@
   },
   "author": "Taimos GmbH",
   "dependencies": {
-    "aws-sdk": "^2.709.0",
+    "aws-sdk": "^2.814.0",
     "gitlab": "^14.2.2"
   },
   "devDependencies": {
